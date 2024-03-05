@@ -1,0 +1,6 @@
+Mode de scrutin : uninominal à un tour, 4 candidats, 100 votants, vainqueur = A
+Mode de scrutin : uninominal à deux tours, tour 1 vainqueur 1 : , 4 candidats, 100 votants, vainqueur = A
+Mode de scrutin : uninominal à deux tours, tour 1 vainqueur 2 : , 4 candidats, 100 votants, vainqueur = B
+Mode de scrutin : uninominal à deux tours, tour 2, 2 candidats, 100 votants, vainqueur = B
+Mode de scrutin : Condorcet Schulze, 4 candidats, 100 votants, vainqueur = B
+Mode de scrutin : Condorcet minimax, 4 candidats, 100 votants, vainqueur = B

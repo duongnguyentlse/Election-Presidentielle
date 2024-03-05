@@ -1,0 +1,559 @@
+\hypertarget{global_8h}{}\doxysection{global.\+h File Reference}
+\label{global_8h}\index{global.h@{global.h}}
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs__tab__dyn}{s\+\_\+tab\+\_\+dyn}}
+\item 
+struct \mbox{\hyperlink{structs__mat__dyn}{s\+\_\+mat\+\_\+dyn}}
+\item 
+struct \mbox{\hyperlink{struct_list___candidats}{List\+\_\+\+Candidats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{global_8h_a8967d92bea4fc95ea8b1c0d3208c1ad8}\label{global_8h_a8967d92bea4fc95ea8b1c0d3208c1ad8}} 
+\#define {\bfseries NB\+\_\+\+BALISES}~4
+\item 
+\mbox{\Hypertarget{global_8h_acec0d4d67f1f7396d54ddf767c0b904e}\label{global_8h_acec0d4d67f1f7396d54ddf767c0b904e}} 
+\#define {\bfseries NB\+\_\+\+METHODES}~5
+\item 
+\mbox{\Hypertarget{global_8h_a3933e6b1c6d9c517223aae763d48de5c}\label{global_8h_a3933e6b1c6d9c517223aae763d48de5c}} 
+\#define {\bfseries OPT\+\_\+I}~0
+\item 
+\mbox{\Hypertarget{global_8h_a6f46fa48b21b175bed7a6340c14ee1db}\label{global_8h_a6f46fa48b21b175bed7a6340c14ee1db}} 
+\#define {\bfseries OPT\+\_\+D}~1
+\item 
+\mbox{\Hypertarget{global_8h_ad19ebc2062d387f4963a3a4f2ad69c9f}\label{global_8h_ad19ebc2062d387f4963a3a4f2ad69c9f}} 
+\#define {\bfseries OPT\+\_\+O}~2
+\item 
+\mbox{\Hypertarget{global_8h_aa43374f20fb9b206a382e55636e43963}\label{global_8h_aa43374f20fb9b206a382e55636e43963}} 
+\#define {\bfseries OPT\+\_\+M}~3
+\item 
+\mbox{\Hypertarget{global_8h_aae4b76c89edb69d0b76e759ecc0ca33d}\label{global_8h_aae4b76c89edb69d0b76e759ecc0ca33d}} 
+\#define {\bfseries OPT\+\_\+H}~-\/1
+\item 
+\mbox{\Hypertarget{global_8h_aa90cac659d18e8ef6294c7ae337f6b58}\label{global_8h_aa90cac659d18e8ef6294c7ae337f6b58}} 
+\#define {\bfseries SUCCESS}~1
+\item 
+\mbox{\Hypertarget{global_8h_a735563036dced0b7d6cc98f97ea4978b}\label{global_8h_a735563036dced0b7d6cc98f97ea4978b}} 
+\#define {\bfseries ERR}~-\/2
+\item 
+\mbox{\Hypertarget{global_8h_a69929448d9f0d8ce2cf346446c46d6fa}\label{global_8h_a69929448d9f0d8ce2cf346446c46d6fa}} 
+\#define {\bfseries NB\+\_\+\+UNUSED}~4
+\item 
+\mbox{\Hypertarget{global_8h_a392fb874e547e582e9c66a08a1f23326}\label{global_8h_a392fb874e547e582e9c66a08a1f23326}} 
+\#define {\bfseries MAX}~300
+\item 
+\mbox{\Hypertarget{global_8h_ada488b1a153e29f9ae0b098de0d6912d}\label{global_8h_ada488b1a153e29f9ae0b098de0d6912d}} 
+\#define {\bfseries MAXINT}~1000
+\item 
+\mbox{\Hypertarget{global_8h_a1be1917a3a707a71239b5e381a1fcdef}\label{global_8h_a1be1917a3a707a71239b5e381a1fcdef}} 
+\#define {\bfseries MININT}~-\/1000
+\item 
+\mbox{\Hypertarget{global_8h_abb35b2be3072583a9e66327b23cd88f0}\label{global_8h_abb35b2be3072583a9e66327b23cd88f0}} 
+\#define {\bfseries LONGMOTS}~30
+\item 
+\mbox{\Hypertarget{global_8h_a72e5d91ecf9eaad9e6e45e4205f4c5d5}\label{global_8h_a72e5d91ecf9eaad9e6e45e4205f4c5d5}} 
+\#define {\bfseries NBCOLADM}~  3
+\item 
+\mbox{\Hypertarget{global_8h_acb00992efca56626cdf0907e5edb5b51}\label{global_8h_acb00992efca56626cdf0907e5edb5b51}} 
+\#define {\bfseries KO}~-\/1
+\item 
+\mbox{\Hypertarget{global_8h_aba51915c87d64af47fb1cc59348961c9}\label{global_8h_aba51915c87d64af47fb1cc59348961c9}} 
+\#define {\bfseries OK}~0
+\item 
+\mbox{\Hypertarget{global_8h_a01ba42d74041196c870e41135bc66f29}\label{global_8h_a01ba42d74041196c870e41135bc66f29}} 
+\#define {\bfseries NBMAXOPTIONS}~4
+\item 
+\mbox{\Hypertarget{global_8h_a3acffbd305ee72dcd4593c0d8af64a4f}\label{global_8h_a3acffbd305ee72dcd4593c0d8af64a4f}} 
+\#define {\bfseries MIN}(a,  b)~(((a) $<$ (b)) ? (a) \+: (b))
+\item 
+\mbox{\Hypertarget{global_8h_adfe0c86ca2a18d006f7dddd2dd771168}\label{global_8h_adfe0c86ca2a18d006f7dddd2dd771168}} 
+\#define {\bfseries MAXI}(a,  b)~(((a) $>$ (b)) ? (a) \+: (b))
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{global_8h_a768f3ad182b734e6f00c2d1db83759c9}\label{global_8h_a768f3ad182b734e6f00c2d1db83759c9}} 
+typedef struct \mbox{\hyperlink{structs__tab__dyn}{s\+\_\+tab\+\_\+dyn}} {\bfseries t\+\_\+tab\+\_\+int\+\_\+dyn}
+\item 
+\mbox{\Hypertarget{global_8h_a41daebea4b910e8bcd44ae3bd52e8f9f}\label{global_8h_a41daebea4b910e8bcd44ae3bd52e8f9f}} 
+typedef struct \mbox{\hyperlink{structs__mat__dyn}{s\+\_\+mat\+\_\+dyn}} {\bfseries t\+\_\+mat\+\_\+int\+\_\+dyn}
+\item 
+\mbox{\Hypertarget{global_8h_a7f4397a27aea2e820d135cd8fc12845f}\label{global_8h_a7f4397a27aea2e820d135cd8fc12845f}} 
+typedef struct \mbox{\hyperlink{struct_list___candidats}{List\+\_\+\+Candidats}} {\bfseries list\+\_\+candidats}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{global_8h_a97ee70a8770dc30d06c744b24eb2fcfc}{help}} ()
+\item 
+void \mbox{\hyperlink{global_8h_ab618f9f495bb9391b635ca0f3eb39190}{affiche\+\_\+resultat}} (FILE $\ast$outfp, char $\ast$scrutin, int nb\+Candidats, int nb\+Votants, float score, char $\ast$vainqueur)
+\item 
+void \mbox{\hyperlink{global_8h_a99211900ea59d15a5ad9bf8dabd72929}{erreur}} (char $\ast$message)
+\item 
+int $\ast$ \mbox{\hyperlink{global_8h_a41b47a3fd48bac1179fb62b95165a179}{creer\+\_\+tab\+\_\+int}} (int dim)
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{global_8h_ae839c755b334ed9dd633629d2ad6007d}{creer\+\_\+tab\+\_\+char}} (int dim)
+\item 
+int $\ast$$\ast$ \mbox{\hyperlink{global_8h_afb7eabe8ded28a70303e309b31a28ab0}{creer\+\_\+mat\+\_\+int}} (int nb\+Rows, int nb\+Col)
+\item 
+int \mbox{\hyperlink{global_8h_a302f103f562468a4a74adecdf33c8dfe}{count\+\_\+nb\+Votants}} (char $\ast$filename)
+\item 
+int \mbox{\hyperlink{global_8h_a533c46617474a06558dae1699113245f}{count\+\_\+nb\+Candidats}} (char $\ast$filename, char $\ast$delimiteur, int option)
+\item 
+char $\ast$ \mbox{\hyperlink{global_8h_a26a4e46c029e5ad99de5871a654f7c94}{strtoke}} (char $\ast$str, char $\ast$delim)
+\item 
+const char $\ast$ \mbox{\hyperlink{global_8h_a8017b00e379f81835dba5d92de55463c}{getfield}} (char $\ast$line, int num, char $\ast$delimiteur)
+\item 
+void \mbox{\hyperlink{global_8h_ac3c0ada64dc8592840464f4c5d513a5a}{read\+\_\+cadidats}} (char $\ast$filename, char $\ast$delimiteur, \mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}} $\ast$list, int option)
+\item 
+void \mbox{\hyperlink{global_8h_a473572c21458753f0a0f634b0966d615}{read\+\_\+voting\+\_\+data}} (char $\ast$filename, char $\ast$delimiteur, \mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} $\ast$list, int option)
+\item 
+int \mbox{\hyperlink{global_8h_ad0949339af33d4a3107d3a694364eee9}{get\+\_\+schulze}} (\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} duels\+\_\+mat)
+\item 
+void \mbox{\hyperlink{global_8h_a34346d34f319ba8c13205dc907249324}{schulze}} (\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} duels\+\_\+mat, \mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}} list, FILE $\ast$outfp)
+\item 
+int \mbox{\hyperlink{global_8h_a48033c068c8cec1a9fbdaeb2d268343c}{get\+\_\+minimax}} (\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} duels\+\_\+mat)
+\item 
+void \mbox{\hyperlink{global_8h_ac61ff0029cc292c680228c0e86fa7e0b}{minimax}} (\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} duels\+\_\+mat, \mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}} list, FILE $\ast$outfp)
+\item 
+\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} $\ast$ \mbox{\hyperlink{global_8h_ae5a6472540ba4ee3168aa32bb2f583a6}{convert\+\_\+to\+\_\+duel\+\_\+matrix}} (\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} t)
+\item 
+void \mbox{\hyperlink{global_8h_acd2d89620b0c813110e8d1fbe5236183}{copy\+\_\+data}} (int $\ast$arr, int size, \mbox{\hyperlink{structs__tab__dyn}{t\+\_\+tab\+\_\+int\+\_\+dyn}} $\ast$t)
+\item 
+int \mbox{\hyperlink{global_8h_a78b90cb78e5a60f7d55267e76336f1c1}{find\+\_\+min\+\_\+one\+\_\+row}} (\mbox{\hyperlink{structs__tab__dyn}{t\+\_\+tab\+\_\+int\+\_\+dyn}} t)
+\item 
+void \mbox{\hyperlink{global_8h_a3e158a4ab98da2061d4fd4c31d169c87}{uninominal\+\_\+un\+\_\+tour}} (\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} t, \mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}} l, FILE $\ast$outfp)
+\item 
+void \mbox{\hyperlink{global_8h_a7bda363a819ab4d947378133125a20b8}{uninominal\+\_\+deux\+\_\+tours}} (\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} t, \mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}} l, FILE $\ast$outfp)
+\item 
+int \mbox{\hyperlink{global_8h_adc07066ac65f9e1b44a21ce30db1b83f}{find\+\_\+max\+\_\+index}} (\mbox{\hyperlink{structs__tab__dyn}{t\+\_\+tab\+\_\+int\+\_\+dyn}} t, int index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+your name 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{global_8h_ab618f9f495bb9391b635ca0f3eb39190}\label{global_8h_ab618f9f495bb9391b635ca0f3eb39190}} 
+\index{global.h@{global.h}!affiche\_resultat@{affiche\_resultat}}
+\index{affiche\_resultat@{affiche\_resultat}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{affiche\_resultat()}{affiche\_resultat()}}
+{\footnotesize\ttfamily void affiche\+\_\+resultat (\begin{DoxyParamCaption}\item[{FILE $\ast$}]{outfp,  }\item[{char $\ast$}]{scrutin,  }\item[{int}]{nb\+Candidats,  }\item[{int}]{nb\+Votants,  }\item[{float}]{score,  }\item[{char $\ast$}]{vainqueur }\end{DoxyParamCaption})}
+
+in thông tin ra màn hình
+
+
+\begin{DoxyParams}{Parameters}
+{\em outfp} & luồng xuất thông tin \\
+\hline
+{\em scrutin} & phương pháp bầu cử \\
+\hline
+{\em nb\+Candidats} & số lượng người ứng cử \\
+\hline
+{\em nb\+Votants} & số lượng người bầu \\
+\hline
+{\em vainqueur} & người chiến thắng \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_ae5a6472540ba4ee3168aa32bb2f583a6}\label{global_8h_ae5a6472540ba4ee3168aa32bb2f583a6}} 
+\index{global.h@{global.h}!convert\_to\_duel\_matrix@{convert\_to\_duel\_matrix}}
+\index{convert\_to\_duel\_matrix@{convert\_to\_duel\_matrix}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{convert\_to\_duel\_matrix()}{convert\_to\_duel\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} $\ast$ convert\+\_\+to\+\_\+duel\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}}}]{t }\end{DoxyParamCaption})}
+
+hàm này dùng để chuyển từ danh sách phiếu bầu sang ma trận
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & danh sách bầu cử \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ma trận được chuyển từ danh sách bầu cử 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_acd2d89620b0c813110e8d1fbe5236183}\label{global_8h_acd2d89620b0c813110e8d1fbe5236183}} 
+\index{global.h@{global.h}!copy\_data@{copy\_data}}
+\index{copy\_data@{copy\_data}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{copy\_data()}{copy\_data()}}
+{\footnotesize\ttfamily void copy\+\_\+data (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr,  }\item[{int}]{size,  }\item[{\mbox{\hyperlink{structs__tab__dyn}{t\+\_\+tab\+\_\+int\+\_\+dyn}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+hàm này dùng để sao chép dữ liệu từ mảng 1 chiều sang kiểu dữ liệu t\+\_\+tab\+\_\+int\+\_\+dyn
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & mảng đầu vào \\
+\hline
+{\em size} & kích thước mảng \\
+\hline
+{\em t} & biến cần được copy dữ liệu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a533c46617474a06558dae1699113245f}\label{global_8h_a533c46617474a06558dae1699113245f}} 
+\index{global.h@{global.h}!count\_nbCandidats@{count\_nbCandidats}}
+\index{count\_nbCandidats@{count\_nbCandidats}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{count\_nbCandidats()}{count\_nbCandidats()}}
+{\footnotesize\ttfamily int count\+\_\+nb\+Candidats (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{char $\ast$}]{delimiteur,  }\item[{int}]{option }\end{DoxyParamCaption})}
+
+hàm count\+\_\+nb\+Candidats dùng để đếm số lượng ứng cử viên phụ thuộc vào option option này là -\/d hoặc -\/i khi chạy chương trình nếu là -\/d thì cần phải trừ 4 thông tin không liên quan nếu là -\/i thì không cần phải trừ thực chất là đếm số lượng delimiteur rồi công thêm 1 sẽ ra được số giá trị
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file cần đọc nội dung \\
+\hline
+{\em delimiteur} & delimiteur \\
+\hline
+{\em option} & xét OPT\+\_\+D hay OPT\+\_\+I \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+số lượng người ứng cử 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a302f103f562468a4a74adecdf33c8dfe}\label{global_8h_a302f103f562468a4a74adecdf33c8dfe}} 
+\index{global.h@{global.h}!count\_nbVotants@{count\_nbVotants}}
+\index{count\_nbVotants@{count\_nbVotants}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{count\_nbVotants()}{count\_nbVotants()}}
+{\footnotesize\ttfamily int count\+\_\+nb\+Votants (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+hàm count\+\_\+nb\+Votants dùng để đếm số lượng vote, tức là đếm số lượng dòng trong file chúng ta sẽ đọc cả file, đếm số lượng ~\newline
+ sẽ biết số lượng dòng sau đó trừ 1 dòng tiêu đề sẽ ra được số lượng vote
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file cần đọc nội dung \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+số lượng bầu cử 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_afb7eabe8ded28a70303e309b31a28ab0}\label{global_8h_afb7eabe8ded28a70303e309b31a28ab0}} 
+\index{global.h@{global.h}!creer\_mat\_int@{creer\_mat\_int}}
+\index{creer\_mat\_int@{creer\_mat\_int}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{creer\_mat\_int()}{creer\_mat\_int()}}
+{\footnotesize\ttfamily int $\ast$$\ast$ creer\+\_\+mat\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{nb\+Rows,  }\item[{int}]{nb\+Col }\end{DoxyParamCaption})}
+
+tạo ma trận 2 chiều
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Rows} & số lượng dòng \\
+\hline
+{\em nb\+Col} & số lượng cột \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ma trận 2 chiều 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_ae839c755b334ed9dd633629d2ad6007d}\label{global_8h_ae839c755b334ed9dd633629d2ad6007d}} 
+\index{global.h@{global.h}!creer\_tab\_char@{creer\_tab\_char}}
+\index{creer\_tab\_char@{creer\_tab\_char}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{creer\_tab\_char()}{creer\_tab\_char()}}
+{\footnotesize\ttfamily char $\ast$$\ast$ creer\+\_\+tab\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{dim }\end{DoxyParamCaption})}
+
+tạo mảng xâu kí tự 1 chiều
+
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & kích thước mảng \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mảng một chiều 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a41b47a3fd48bac1179fb62b95165a179}\label{global_8h_a41b47a3fd48bac1179fb62b95165a179}} 
+\index{global.h@{global.h}!creer\_tab\_int@{creer\_tab\_int}}
+\index{creer\_tab\_int@{creer\_tab\_int}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{creer\_tab\_int()}{creer\_tab\_int()}}
+{\footnotesize\ttfamily int $\ast$ creer\+\_\+tab\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{dim }\end{DoxyParamCaption})}
+
+tạo mảng số nguyên 1 chiều
+
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & kích thước mảng \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mảng một chiều 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a99211900ea59d15a5ad9bf8dabd72929}\label{global_8h_a99211900ea59d15a5ad9bf8dabd72929}} 
+\index{global.h@{global.h}!erreur@{erreur}}
+\index{erreur@{erreur}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{erreur()}{erreur()}}
+{\footnotesize\ttfamily void erreur (\begin{DoxyParamCaption}\item[{char $\ast$}]{message }\end{DoxyParamCaption})}
+
+in message ra màn hình
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_adc07066ac65f9e1b44a21ce30db1b83f}\label{global_8h_adc07066ac65f9e1b44a21ce30db1b83f}} 
+\index{global.h@{global.h}!find\_max\_index@{find\_max\_index}}
+\index{find\_max\_index@{find\_max\_index}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{find\_max\_index()}{find\_max\_index()}}
+{\footnotesize\ttfamily int find\+\_\+max\+\_\+index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__tab__dyn}{t\+\_\+tab\+\_\+int\+\_\+dyn}}}]{t,  }\item[{int}]{idx }\end{DoxyParamCaption})}
+
+hàm này dùng để tìm index của giá trị lớn nhất
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & dữ liệu đầu vào \\
+\hline
+{\em idx} & bỏ qua index này \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index của giá trị lớn nhất 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a78b90cb78e5a60f7d55267e76336f1c1}\label{global_8h_a78b90cb78e5a60f7d55267e76336f1c1}} 
+\index{global.h@{global.h}!find\_min\_one\_row@{find\_min\_one\_row}}
+\index{find\_min\_one\_row@{find\_min\_one\_row}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{find\_min\_one\_row()}{find\_min\_one\_row()}}
+{\footnotesize\ttfamily int find\+\_\+min\+\_\+one\+\_\+row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__tab__dyn}{t\+\_\+tab\+\_\+int\+\_\+dyn}}}]{t }\end{DoxyParamCaption})}
+
+hàm này dùng để tìm giá trị nhỏ nhất của 1 votant dành cho cadidats
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & dữ liệu đầu vào \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+giá trị nhỏ nhất 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a48033c068c8cec1a9fbdaeb2d268343c}\label{global_8h_a48033c068c8cec1a9fbdaeb2d268343c}} 
+\index{global.h@{global.h}!get\_minimax@{get\_minimax}}
+\index{get\_minimax@{get\_minimax}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{get\_minimax()}{get\_minimax()}}
+{\footnotesize\ttfamily int get\+\_\+minimax (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}}}]{duels\+\_\+mat }\end{DoxyParamCaption})}
+
+hàm này dùng để lấy index người chiến thắng dựa vào phương pháp Condorcet minimax \href{https://en.wikipedia.org/wiki/Minimax_Condorcet_method\#Example_with_Condorcet_winner}{\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+Minimax\+\_\+\+Condorcet\+\_\+method\#\+Example\+\_\+with\+\_\+\+Condorcet\+\_\+winner}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em duels\+\_\+mat} & ma trận bầu cử \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index của người chiến thắng
+\end{DoxyReturn}
+hàm này dùng để lấy index người chiến thắng dựa vào phương pháp Condorcet minimax
+
+
+\begin{DoxyParams}{Parameters}
+{\em duels\+\_\+mat} & ma trận bầu cử \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index của người chiến thắng 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_ad0949339af33d4a3107d3a694364eee9}\label{global_8h_ad0949339af33d4a3107d3a694364eee9}} 
+\index{global.h@{global.h}!get\_schulze@{get\_schulze}}
+\index{get\_schulze@{get\_schulze}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{get\_schulze()}{get\_schulze()}}
+{\footnotesize\ttfamily int get\+\_\+schulze (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}}}]{duels\+\_\+mat }\end{DoxyParamCaption})}
+
+hàm này dùng để lấy index của người chiến thắng dựa vào phương pháp Condorcet schulze với thuật toán Floyd warshall
+
+
+\begin{DoxyParams}{Parameters}
+{\em duels\+\_\+mat} & ma trận bầu cử \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index của người chiến thắng 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a8017b00e379f81835dba5d92de55463c}\label{global_8h_a8017b00e379f81835dba5d92de55463c}} 
+\index{global.h@{global.h}!getfield@{getfield}}
+\index{getfield@{getfield}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{getfield()}{getfield()}}
+{\footnotesize\ttfamily const char $\ast$ getfield (\begin{DoxyParamCaption}\item[{char $\ast$}]{line,  }\item[{int}]{num,  }\item[{char $\ast$}]{delimiteur }\end{DoxyParamCaption})}
+
+hàm getfield dùng để lấy dữ liệu thứ num ví dụ value1, value2, value 3, num = 2 thì sẽ nhận được giá trị là value2
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & chuỗi đầu vào \\
+\hline
+{\em num} & vị trí cần cắt \\
+\hline
+{\em delimiteur} & delimiteur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+chuỗi cần cắt 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a97ee70a8770dc30d06c744b24eb2fcfc}\label{global_8h_a97ee70a8770dc30d06c744b24eb2fcfc}} 
+\index{global.h@{global.h}!help@{help}}
+\index{help@{help}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print help to user
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_ac61ff0029cc292c680228c0e86fa7e0b}\label{global_8h_ac61ff0029cc292c680228c0e86fa7e0b}} 
+\index{global.h@{global.h}!minimax@{minimax}}
+\index{minimax@{minimax}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{minimax()}{minimax()}}
+{\footnotesize\ttfamily void minimax (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}}}]{duels\+\_\+mat,  }\item[{\mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}}}]{list,  }\item[{FILE $\ast$}]{outfp }\end{DoxyParamCaption})}
+
+hàm này dùng để tìm người chiến thắng bằng minimax
+
+
+\begin{DoxyParams}{Parameters}
+{\em duels\+\_\+mat} & ma trận bầu cử \\
+\hline
+{\em list} & danh sách ứng cử viên \\
+\hline
+{\em outfp} & luồng xuất thông tin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_ac3c0ada64dc8592840464f4c5d513a5a}\label{global_8h_ac3c0ada64dc8592840464f4c5d513a5a}} 
+\index{global.h@{global.h}!read\_cadidats@{read\_cadidats}}
+\index{read\_cadidats@{read\_cadidats}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{read\_cadidats()}{read\_cadidats()}}
+{\footnotesize\ttfamily void read\+\_\+cadidats (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{char $\ast$}]{delimiteur,  }\item[{\mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}} $\ast$}]{list,  }\item[{int}]{option }\end{DoxyParamCaption})}
+
+hàm read\+\_\+cadidats dùng để đọc danh sách cadidats option cũng tương tự với hàm phía trên, nếu là -\/d thì cần bỏ 4 giá trị đầu còn nếu là -\/i thì không cần loại bỏ giá trị không cần thiết
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file cần đọc \\
+\hline
+{\em list} & danh sách ứng cử viên \\
+\hline
+{\em delimiteur} & delimiteur \\
+\hline
+{\em option} & xét OPT\+\_\+D hay OPT\+\_\+I \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a473572c21458753f0a0f634b0966d615}\label{global_8h_a473572c21458753f0a0f634b0966d615}} 
+\index{global.h@{global.h}!read\_voting\_data@{read\_voting\_data}}
+\index{read\_voting\_data@{read\_voting\_data}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{read\_voting\_data()}{read\_voting\_data()}}
+{\footnotesize\ttfamily void read\+\_\+voting\+\_\+data (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{char $\ast$}]{delimiteur,  }\item[{\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}} $\ast$}]{list,  }\item[{int}]{option }\end{DoxyParamCaption})}
+
+hàm read\+\_\+voting\+\_\+data dùng để đọc dữ liệu vote từ danh sách nó cũng tương tự đối với tham số option, nếu là -\/d thì cần bỏ 4 cột đầu k có ý nghĩa, còn -\/i thì không cần bỏ cột nào hết
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file cần đọc \\
+\hline
+{\em list} & danh sách phiếu cần đọc \\
+\hline
+{\em delimiteur} & delimiteur \\
+\hline
+{\em option} & xét OPT\+\_\+D hay OPT\+\_\+I \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a34346d34f319ba8c13205dc907249324}\label{global_8h_a34346d34f319ba8c13205dc907249324}} 
+\index{global.h@{global.h}!schulze@{schulze}}
+\index{schulze@{schulze}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{schulze()}{schulze()}}
+{\footnotesize\ttfamily void schulze (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}}}]{duels\+\_\+mat,  }\item[{\mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}}}]{list,  }\item[{FILE $\ast$}]{outfp }\end{DoxyParamCaption})}
+
+hàm này dùng để tìm chiến thằng bằng Schulze
+
+
+\begin{DoxyParams}{Parameters}
+{\em duels\+\_\+mat} & ma trận bầu cử \\
+\hline
+{\em list} & danh sách ứng cử viên \\
+\hline
+{\em outfp} & luồng xuất thông tin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a26a4e46c029e5ad99de5871a654f7c94}\label{global_8h_a26a4e46c029e5ad99de5871a654f7c94}} 
+\index{global.h@{global.h}!strtoke@{strtoke}}
+\index{strtoke@{strtoke}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{strtoke()}{strtoke()}}
+{\footnotesize\ttfamily char $\ast$ strtoke (\begin{DoxyParamCaption}\item[{char $\ast$}]{str,  }\item[{char $\ast$}]{delim }\end{DoxyParamCaption})}
+
+hàm này dùng để cắt chuỗi dựa vào delimiteur
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & chuỗi đầu vào \\
+\hline
+{\em delim} & delimiteur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+chuỗi cắt được 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a7bda363a819ab4d947378133125a20b8}\label{global_8h_a7bda363a819ab4d947378133125a20b8}} 
+\index{global.h@{global.h}!uninominal\_deux\_tours@{uninominal\_deux\_tours}}
+\index{uninominal\_deux\_tours@{uninominal\_deux\_tours}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{uninominal\_deux\_tours()}{uninominal\_deux\_tours()}}
+{\footnotesize\ttfamily void uninominal\+\_\+deux\+\_\+tours (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}}}]{t,  }\item[{\mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}}}]{l,  }\item[{FILE $\ast$}]{outfp }\end{DoxyParamCaption})}
+
+hàm này dùng để tìm người chiến thắng uninominal\+\_\+deux\+\_\+tours
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & danh sách bầu cử \\
+\hline
+{\em list} & danh sách ứng cử viên \\
+\hline
+{\em outfp} & luồng xuất thông tin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{global_8h_a3e158a4ab98da2061d4fd4c31d169c87}\label{global_8h_a3e158a4ab98da2061d4fd4c31d169c87}} 
+\index{global.h@{global.h}!uninominal\_un\_tour@{uninominal\_un\_tour}}
+\index{uninominal\_un\_tour@{uninominal\_un\_tour}!global.h@{global.h}}
+\doxysubsubsection{\texorpdfstring{uninominal\_un\_tour()}{uninominal\_un\_tour()}}
+{\footnotesize\ttfamily void uninominal\+\_\+un\+\_\+tour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs__mat__dyn}{t\+\_\+mat\+\_\+int\+\_\+dyn}}}]{t,  }\item[{\mbox{\hyperlink{struct_list___candidats}{list\+\_\+candidats}}}]{l,  }\item[{FILE $\ast$}]{outfp }\end{DoxyParamCaption})}
+
+hàm này dùng để tìm người chiến thắng uninominal\+\_\+un\+\_\+tour
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & danh sách bầu cử \\
+\hline
+{\em list} & danh sách ứng cử viên \\
+\hline
+{\em outfp} & luồng xuất thông tin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

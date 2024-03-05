@@ -1,0 +1,111 @@
+\hypertarget{global_8h_source}{}\doxysection{global.\+h}
+\mbox{\hyperlink{global_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef GLOBAL\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define GLOBAL\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <ctype.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define NB\_BALISES 4}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define NB\_METHODES 5}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define OPT\_I 0}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define OPT\_D 1}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define OPT\_O 2}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define OPT\_M 3}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define OPT\_H -\/1}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define SUCCESS 1}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define ERR -\/2}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define NB\_UNUSED 4 }\textcolor{comment}{// \(\backslash\)def< sỐ lượng dữ liệu không dùng như id, ngày,../}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define MAX 300      }}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define MAXINT 1000  }}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define MININT -\/1000 }}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define LONGMOTS 30  }}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define NBCOLADM                                                               \(\backslash\)}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{  3 }}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define KO -\/1          }}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define OK 0           }}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#define NBMAXOPTIONS 4 }}
+\DoxyCodeLine{36 \textcolor{comment}{//}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define MIN(a, b) (((a) < (b)) ? (a) : (b))}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#define MAXI(a, b) (((a) > (b)) ? (a) : (b))}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{41 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structs__tab__dyn}{s\_tab\_dyn}} \{}
+\DoxyCodeLine{42   \textcolor{keywordtype}{int} *tab;}
+\DoxyCodeLine{43   \textcolor{keywordtype}{int} dim;}
+\DoxyCodeLine{44 \} \mbox{\hyperlink{structs__tab__dyn}{t\_tab\_int\_dyn}};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structs__mat__dyn}{s\_mat\_dyn}} \{}
+\DoxyCodeLine{47   \textcolor{keywordtype}{int} **tab;}
+\DoxyCodeLine{48   \textcolor{keywordtype}{int} nbRows;}
+\DoxyCodeLine{49   \textcolor{keywordtype}{int} nbCol;}
+\DoxyCodeLine{50 \} \mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{53 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_list___candidats}{List\_Candidats}} \{}
+\DoxyCodeLine{54   \textcolor{keywordtype}{char} **name;}
+\DoxyCodeLine{55   \textcolor{keywordtype}{int} count;}
+\DoxyCodeLine{56 \} \mbox{\hyperlink{struct_list___candidats}{list\_candidats}};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{64 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_a97ee70a8770dc30d06c744b24eb2fcfc}{help}}();}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{76 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_ab618f9f495bb9391b635ca0f3eb39190}{affiche\_resultat}}(FILE *outfp, \textcolor{keywordtype}{char} *scrutin, \textcolor{keywordtype}{int} nbCandidats,}
+\DoxyCodeLine{77                       \textcolor{keywordtype}{int} nbVotants, \textcolor{keywordtype}{float} score, \textcolor{keywordtype}{char} *vainqueur);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{84 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_a99211900ea59d15a5ad9bf8dabd72929}{erreur}}(\textcolor{keywordtype}{char} *message);}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{92 \textcolor{keywordtype}{int} *\mbox{\hyperlink{global_8h_a41b47a3fd48bac1179fb62b95165a179}{creer\_tab\_int}}(\textcolor{keywordtype}{int} dim);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{100 \textcolor{keywordtype}{char} **\mbox{\hyperlink{global_8h_ae839c755b334ed9dd633629d2ad6007d}{creer\_tab\_char}}(\textcolor{keywordtype}{int} dim);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{109 \textcolor{keywordtype}{int} **\mbox{\hyperlink{global_8h_afb7eabe8ded28a70303e309b31a28ab0}{creer\_mat\_int}}(\textcolor{keywordtype}{int} nbRows, \textcolor{keywordtype}{int} nbCol);}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{119 \textcolor{keywordtype}{int} \mbox{\hyperlink{global_8h_a302f103f562468a4a74adecdf33c8dfe}{count\_nbVotants}}(\textcolor{keywordtype}{char} *filename);}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{133 \textcolor{keywordtype}{int} \mbox{\hyperlink{global_8h_a533c46617474a06558dae1699113245f}{count\_nbCandidats}}(\textcolor{keywordtype}{char} *filename, \textcolor{keywordtype}{char} *delimiteur, \textcolor{keywordtype}{int} option);}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{142 \textcolor{keywordtype}{char} *\mbox{\hyperlink{global_8h_a26a4e46c029e5ad99de5871a654f7c94}{strtoke}}(\textcolor{keywordtype}{char} *str, \textcolor{keywordtype}{char} *delim);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{153 \textcolor{keyword}{const} \textcolor{keywordtype}{char} *\mbox{\hyperlink{global_8h_a8017b00e379f81835dba5d92de55463c}{getfield}}(\textcolor{keywordtype}{char} *line, \textcolor{keywordtype}{int} num, \textcolor{keywordtype}{char} *delimiteur);}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{166 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_ac3c0ada64dc8592840464f4c5d513a5a}{read\_cadidats}}(\textcolor{keywordtype}{char} *filename, \textcolor{keywordtype}{char} *delimiteur, \mbox{\hyperlink{struct_list___candidats}{list\_candidats}} *list,}
+\DoxyCodeLine{167                    \textcolor{keywordtype}{int} option);}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{180 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_a473572c21458753f0a0f634b0966d615}{read\_voting\_data}}(\textcolor{keywordtype}{char} *filename, \textcolor{keywordtype}{char} *delimiteur, \mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}} *list,}
+\DoxyCodeLine{181                       \textcolor{keywordtype}{int} option);}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183 }
+\DoxyCodeLine{191 \textcolor{keywordtype}{int} \mbox{\hyperlink{global_8h_ad0949339af33d4a3107d3a694364eee9}{get\_schulze}}(\mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}} duels\_mat);}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193 }
+\DoxyCodeLine{202 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_a34346d34f319ba8c13205dc907249324}{schulze}}(\mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}} duels\_mat, \mbox{\hyperlink{struct_list___candidats}{list\_candidats}} list, FILE *outfp);}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{211 \textcolor{keywordtype}{int} \mbox{\hyperlink{global_8h_a48033c068c8cec1a9fbdaeb2d268343c}{get\_minimax}}(\mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}} duels\_mat);}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213 }
+\DoxyCodeLine{222 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_ac61ff0029cc292c680228c0e86fa7e0b}{minimax}}(\mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}} duels\_mat, \mbox{\hyperlink{struct_list___candidats}{list\_candidats}} list, FILE *outfp);}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{224 }
+\DoxyCodeLine{231 \mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}}* \mbox{\hyperlink{global_8h_ae5a6472540ba4ee3168aa32bb2f583a6}{convert\_to\_duel\_matrix}}(\mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}} t);}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233 }
+\DoxyCodeLine{243 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_acd2d89620b0c813110e8d1fbe5236183}{copy\_data}}(\textcolor{keywordtype}{int} *arr, \textcolor{keywordtype}{int} size, \mbox{\hyperlink{structs__tab__dyn}{t\_tab\_int\_dyn}} *t);}
+\DoxyCodeLine{244 }
+\DoxyCodeLine{251 \textcolor{keywordtype}{int} \mbox{\hyperlink{global_8h_a78b90cb78e5a60f7d55267e76336f1c1}{find\_min\_one\_row}}(\mbox{\hyperlink{structs__tab__dyn}{t\_tab\_int\_dyn}} t);}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{261 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_a3e158a4ab98da2061d4fd4c31d169c87}{uninominal\_un\_tour}}(\mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}} t, \mbox{\hyperlink{struct_list___candidats}{list\_candidats}} l, FILE *outfp);}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{271 \textcolor{keywordtype}{void} \mbox{\hyperlink{global_8h_a7bda363a819ab4d947378133125a20b8}{uninominal\_deux\_tours}}(\mbox{\hyperlink{structs__mat__dyn}{t\_mat\_int\_dyn}} t, \mbox{\hyperlink{struct_list___candidats}{list\_candidats}} l, FILE *outfp);}
+\DoxyCodeLine{272 }
+\DoxyCodeLine{280 \textcolor{keywordtype}{int} \mbox{\hyperlink{global_8h_adc07066ac65f9e1b44a21ce30db1b83f}{find\_max\_index}}(\mbox{\hyperlink{structs__tab__dyn}{t\_tab\_int\_dyn}} t, \textcolor{keywordtype}{int} index);}
+\DoxyCodeLine{281 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
