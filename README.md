@@ -1,5 +1,12 @@
 # Simulation d'une élection présidentielle
 
+**Prerequisites**
+
+Before you continue, ensure you meet the following requirements:
+
+* I recommend you to ```make clean``` before run the programme.
+* You are using a Linux or Mac OS machine. Windows is not currently supported beacause i did on Mac.
+
 Ce programme lit un fichier .csv contenant soit le bulletin de vote des électeurs (leurs données avec leur ordre de préférence associé pour chaque candidat) soit une matrice de préférences par paires, puis détermine le vainqueur en utilisant les méthodes suivantes :
 
 Élection uninominale à un tour [telle qu'appliquée au Royaume-Uni et dans les pays du Commonwealth]
