@@ -1,19 +1,31 @@
-# Simulation d'une élection présidentielle
+# 🗳️ Simulation d'une Élection Présidentielle
 
-**Prerequisites**
+## 📌 Présentation  
+Ce projet est une **simulation de différentes méthodes de vote utilisées dans une élection présidentielle**.  
+Il permet de déterminer le vainqueur en lisant un fichier **.csv** contenant :  
+- Soit les **bulletins de vote des électeurs** avec leur ordre de préférence pour chaque candidat.  
+- Soit une **matrice de préférences par paires**.  
 
-Before you continue, ensure you meet the following requirements:
+Le programme applique plusieurs méthodes de scrutin pour élire le gagnant, notamment :  
+1. **Élection uninominale à un tour** (utilisée au Royaume-Uni et dans le Commonwealth).  
+2. **Élection uninominale à deux tours** (système en vigueur en France).  
+3. **Méthode Minimax (Condorcet)**.  
+4. **Méthode Schulze (Condorcet)**.  
 
-* I recommend you to ```make clean``` before run the programme.
-* You are using a Linux or Mac OS machine. Windows is not currently supported beacause i did on Mac.
+Les deux dernières méthodes sont inspirées des travaux du **marquis de Condorcet**, qui visait à mieux refléter les préférences des électeurs dans son *"Essai sur l'application de l'analyse à la probabilité des décisions rendues à la pluralité des voix"*.  
 
-Ce programme lit un fichier .csv contenant soit le bulletin de vote des électeurs (leurs données avec leur ordre de préférence associé pour chaque candidat) soit une matrice de préférences par paires, puis détermine le vainqueur en utilisant les méthodes suivantes :
+Ce projet a été réalisé dans le cadre de mes **études de licence en informatique** (premier semestre de la deuxième année).  
 
-Élection uninominale à un tour [telle qu'appliquée au Royaume-Uni et dans les pays du Commonwealth]
-Élection uninominale à deux tours [comme appliquée en France]
-Minimax (Condorcet)
-Schulze (Condorcet)
-Les deux dernières méthodes Condorcet mentionnées sont utilisées pour mieux refléter la voix et les préférences des électeurs, comme l'a souligné Nicolas de Caritat, marquis de Condorcet, dans son "Essai sur l'application de l'analyse à la probabilité des décisions rendues à la pluralité des voix".
+---
+
+## ⚙️ Prérequis  
+
+Avant d'exécuter le programme, assurez-vous de respecter les conditions suivantes :  
+✔️ **Effectuer un `make clean` avant d'exécuter le programme** pour éviter les conflits d'anciens fichiers compilés.  
+✔️ **Utiliser un environnement Linux ou macOS** (Windows n'est pas supporté car le développement a été réalisé sur macOS).  
+
+---
+
 
 Enfin, ce projet fait partie de mes études de licence en informatique (premier semestre de la deuxième année).
 
